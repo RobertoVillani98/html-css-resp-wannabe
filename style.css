@@ -73,6 +73,12 @@ img {
 }
 
 @media screen and (max-width: 420px) {
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
  .row {
   width: 100%;
  }
@@ -100,10 +106,38 @@ img {
   margin-top: 0;
   padding: 20px 0;
  }
+}
 
+@media screen and (max-width: 768px) and (min-width: 420px) {
  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ }
+
+ .row {
+  width: 100%;
+  margin-top: 0;
+ }
+
+ #steps .row > .left,
+ #steps .row > .central,
+ #steps .row > .right {
+  width: 50%;
+ }
+
+ #steps .row > .right {
+  float: none;
+  margin: auto;
+ }
+
+ img {
+  height: 200px;
+ }
+
+ #lezioni,
+ #why {
+  background-color: lightyellow;
+  width: 100%;
  }
 }
